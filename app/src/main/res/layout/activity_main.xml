@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFC658"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="The Now Playing App"
+        android:textAlignment="center"
+        android:textColor="#ff1111"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_fetch"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="10dp"
+        android:text="Fetch" />
+
+    <Button
+        android:id="@+id/button_refresh"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="140dp"
+        android:text="Sort" />
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="540dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="5dp"
+        android:background="#F4D788"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
